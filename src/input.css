@@ -1,3 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.ct-menu {
+  @apply cursor-pointer
+  py-1 
+  hover:text-gray-800 
+  relative 
+  after:lgabsolute 
+  after:lgbottom-0 
+  after:lgleft-0 
+  after:lgbg-light-coffee
+  after:lgh-0.5 after:lgw-0 
+  hover:after:lgw-full 
+  after:lgtransition-all 
+  after:lgease-in-out 
+  after:lgduration-300;
+}
+.ct-icon {
+  @apply w-5 
+  h-5
+  inline-block;
+}
+.ct-circle {
+  @apply text-xs 
+  text-center
+  rounded-full
+  px-1.5;
+}
+.ct-topmenu {
+  @apply absolute
+  top-10
+  z-50
+  w-10
+  text-center
+  bg-white;
+}
