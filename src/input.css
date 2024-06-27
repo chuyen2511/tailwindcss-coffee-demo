@@ -41,3 +41,16 @@
   rounded-full
   px-1.5;
 }
+.subheadline {
+  @apply flex justify-center items-center mb-40;
+}
+.subheadline-deco-live {
+  @apply w-8 h-px bg-gray-300;
+}
+.subheadline-laybel {
+  @apply uppercase mx-4 tracking-wider text-gray-500  font-medium text-[13px];
+}
+.ct-btn {
+  @apply text-center text-sm uppercase tracking-wider py-4 px-6 cursor-pointer 
+  hover:bg-opacity-90;
+}
