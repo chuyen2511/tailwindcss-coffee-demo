@@ -3,20 +3,32 @@
 @tailwind components;
 @tailwind utilities;
 
+.ct-topMenu-Header {
+  @apply absolute
+  top-10
+  z-50
+  w-full
+  text-center
+  bg-white
+  animate-slideDown;
+}
 .ct-menu {
   @apply cursor-pointer
   py-1 
   hover:text-gray-800 
   relative 
-  after:lgabsolute 
-  after:lgbottom-0 
-  after:lgleft-0 
-  after:lgbg-light-coffee
-  after:lgh-0.5 after:lgw-0 
-  hover:after:lgw-full 
-  after:lgtransition-all 
-  after:lgease-in-out 
-  after:lgduration-300;
+  after:lg:absolute 
+  after:lg:bottom-0 
+  after:lg:left-0 
+  after:lg:bg-light-coffee
+  after:lg:h-0.5 after:lg:w-0 
+  hover:after:lg:w-full 
+  after:lg:transition-all 
+  after:lg:ease-in-out 
+  after:lg:duration-300;
+}
+.ct-menu-active {
+  @apply text-gray-800;
 }
 .ct-icon {
   @apply w-5 
@@ -28,12 +40,4 @@
   text-center
   rounded-full
   px-1.5;
-}
-.ct-topmenu {
-  @apply absolute
-  top-10
-  z-50
-  w-10
-  text-center
-  bg-white;
 }
